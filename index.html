@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSB Open House Roadmap - Mobile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mobile-container {
+            width: 100%;
+            max-width: 480px;
+            background: #fff;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #1B3B6F;
+            color: #fff;
+            padding: 25px 20px;
+            text-align: center;
+            border-bottom: 4px solid #F9A03F;
+        }
+        .header h1 {
+            font-size: 26px;
+            margin: 0;
+        }
+        .header h2 {
+            font-size: 16px;
+            font-style: italic;
+            color: #e2e8f0;
+            margin: 8px 0 0 0;
+        }
+        .rules {
+            background-color: #fefce8;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 14px;
+            color: #475569;
+        }
+        
+        .timeline {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Timeline Items */
+        .step {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 12px;
+            border: 2px solid #cbd5e1;
+            padding: 15px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .step.ground { border-left: 6px solid #10b981; background: #f0fdf4; }
+        .step.first { border-left: 6px solid #3b82f6; background: #eff6ff; }
+        .step.second { border-left: 6px solid #eab308; background: #fefce8; }
+        .step.third { border-left: 6px solid #ec4899; background: #fdf2f8; }
+        
+        .step-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1B3B6F;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .activities {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .activity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            color: #334155;
+            padding: 8px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 6px;
+        }
+        .activity:not(:last-child):after {
+            content: "⬇️";
+            position: absolute;
+            left: 30px;
+            margin-top: 35px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+
+        /* Transit markers */
+        .transit {
+            text-align: center;
+            padding: 10px 0;
+            color: #10b981;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .transit.exit {
+            color: #ef4444;
+        }
+        .transit-icon {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 13px;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="header">
+            <h1>MSB Open House</h1>
+            <h2>✨ "A Journey Through Learning..." ✨</h2>
+        </div>
+
+        <div class="rules">
+            <p><strong>⬆️ Enter:</strong> Main Stairs (Go Up)<br><strong>⬇️ Exit:</strong> Back Stairs (Go Down from 3rd Floor)</p>
+        </div>
+
+        <div class="timeline">
+            
+            <div class="transit">
+                <div class="transit-icon">🚶‍♂️⬆️</div>
+                Enter Ground Floor via Main Entrance
+            </div>
+
+            <!-- Ground Floor -->
+            <div class="step ground">
+                <div class="step-title">📍 Ground Floor</div>
+                <div class="activities">
+                    <div class="activity">🏢 Reception</div>
+                    <div class="activity">🕌 Dua Hall & Projects</div>
+                    <div class="activity">🎨 Art Corner</div>
+                    <div class="activity">⚽ Sports Area</div>
+                    <div class="activity">🩺 محل الشفاء (Mahal-us-Shifa)</div>
+                </div>
+            </div>
+
+            <div class="transit">
+                <div class="transit-icon">⬆️🪜</div>
+                Take Main Stairs to 1st Floor
+            </div>
+
+            <!-- First Floor -->
+            <div class="step first">
+                <div class="step-title">📍 First Floor</div>
+                <div class="activities">
+                    <div class="activity">📚 Classes 5 & 6</div>
+                    <div class="activity">🧩 Activity Room</div>
+                    <div class="activity">🍳 Home Sciences</div>
+                    <div class="activity">🔬 Science Lab</div>
+                    <div class="activity">💻 ICT Room</div>
+                </div>
+            </div>
+
+            <div class="transit">
+                <div class="transit-icon">⬆️🪜</div>
+                Take Main Stairs to 2nd Floor
+            </div>
+
+            <!-- Second Floor -->
+            <div class="step second">
+                <div class="step-title">📍 Second Floor</div>
+                <div class="activities">
+                    <div class="activity">📖 Classes 7 & 8</div>
+                    <div class="activity">📚 Library</div>
+                    <div class="activity">🕌 Hifz Room</div>
+                </div>
+            </div>
+
+            <div class="transit">
+                <div class="transit-icon">⬆️🪜</div>
+                Take Main Stairs to 3rd Floor
+            </div>
+
+            <!-- Third Floor -->
+            <div class="step third">
+                <div class="step-title">📍 Third Floor</div>
+                <div class="activities">
+                    <div class="activity">🎓 Classes 9 to 12</div>
+                    <div class="activity">🕌 Dua Hall</div>
+                    <div class="activity">🎙️ TED Talk Room</div>
+                    <div class="activity">👨‍🏫 DEMO Classes</div>
+                </div>
+            </div>
+
+            <div class="transit exit">
+                <div class="transit-icon">🚪⬇️</div>
+                Exit via Back Stairs directly to Ground
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Student volunteers are available on every floor to assist you.</p>
+        </div>
+    </div>
+</body>
+</html>
